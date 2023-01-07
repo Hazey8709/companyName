@@ -1,0 +1,281 @@
+/*!                   Contact Page Style CSS                  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    background: rgba(5, 5, 5, 0.116) url(/img/woodPlank-3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 308px) and (max-width: 425px) {
+    /*!                      Nav-Bar                            */
+    #nav-container {
+        border: 1px solid white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.521);
+        height: 150px;
+    }
+
+    .navBar-title {
+        color: white;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+
+    .li-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 3px;
+        margin: 5px;
+    }
+
+    li:hover {
+        border: 1px solid white;
+    }
+
+    .nav-btns {
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .nav-btns:hover {
+        color: green;
+    }
+
+    .nav-btns:active {
+        color: red;
+    }
+
+    /*!                 Main Content                     */
+    #main-title {
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-shadow: 0.1rem 0.1rem 0.5rem rgba(2, 2, 2, 0.661);
+        text-align: center;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .email-link {
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        font-size: 14px;
+        padding: 5px;
+        color: blue;
+        text-decoration: none;
+    }
+
+    .email-link:hover {
+        border: 1px solid blue;
+        color: white;
+    }
+
+    .email-link:active {
+        color: red;
+    }
+
+    /*!                 Contact -- Form                    */
+    #form-container {
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.521);
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        margin-top: 50px; /*! change accordingly */
+    }
+
+    .form {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 10px;
+    }
+
+    /**        Name titles in form     */
+    .form-title {
+        color: white;
+        font-size: 22px;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+
+    .firstName-title {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .lastName-title {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .address-title {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .details-title {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .category-title {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .estimate-title {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .yes-label {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    .no-label {
+        color: rgb(160, 160, 160);
+        font-weight: bold;
+    }
+
+    /**   Input Boxes     */
+    #firstName {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    #lastName {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    #address {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    #details {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    #category {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    /**     Form Buttons      */
+    .submit-btn {
+        border: 3px double darkgreen;
+        border-radius: 10px;
+        background-color: lightgreen;
+        font-weight: bold;
+        padding: 3px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .submit-btn:hover {
+        border: 3px solid darkgreen;
+        border-radius: 10px;
+        background-color: white;
+        color: darkgreen;
+        font-weight: bold;
+    }
+
+    .reset-btn {
+        border: 3px double red;
+        border-radius: 10px;
+        background-color: lightcoral;
+        font-weight: bold;
+        padding: 3px;
+        margin-top: 20px;
+    }
+
+    .reset-btn:hover {
+        border: 3px solid red;
+        border-radius: 10px;
+        background-color: white;
+        color: red;
+        font-weight: bold;
+    }
+
+    /*!         Footer Container                       */
+    #footer-container {
+        border: 1px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.521);
+        margin-top: 50px; /*! change accordingly */
+        height: 200px;
+    }
+
+    .footer-title {
+        color: white;
+        text-decoration: underline;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    #links-area {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.596);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 5px;
+        height: 153px;
+        text-align: center;
+    }
+
+    .emailMe-link {
+        text-decoration: none;
+        color: limegreen;
+        font-size: 20px;
+    }
+
+    .emailMe-link:hover {
+        color: limegreen;
+        background-color: black;
+        padding: 4px;
+        border: 1px solid limegreen;
+        border-radius: 10px;
+        text-decoration: underline;
+    }
+
+    .info {
+        color: rgb(160, 160, 160);
+        margin-top: 10px;
+    }
+}

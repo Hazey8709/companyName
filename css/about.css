@@ -1,0 +1,243 @@
+/*!      About Page Style Css    */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    background: rgba(5, 5, 5, 0.116) url("/img/woodPlank-2.jpg") no-repeat
+        center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 308px) and (max-width: 425px) {
+    /*!              Nav-Bar                */
+    #nav-container {
+        border: 1px solid white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.521);
+        height: 150px;
+    }
+
+    .navBar-title {
+        color: white;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+
+    .li-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 3px;
+        margin: 5px;
+    }
+
+    li:hover {
+        border: 1px solid white;
+    }
+
+    .nav-btns {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-btns:hover {
+        color: green;
+    }
+
+    .nav-btns:active {
+        color: red;
+    }
+
+    /*!           Main Content                        */
+    #main-Paragraph {
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0.1rem 0.1rem 0.5rem rgba(2, 2, 2, 0.661);
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .email-link {
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        font-size: 14px;
+        padding: 5px;
+        color: blue;
+        text-decoration: none;
+    }
+
+    .email-link:hover {
+        border: 1px solid blue;
+        color: white;
+    }
+
+    .email-link:active {
+        color: red;
+    }
+
+    /*!      Break-Down Container                       */
+    #breakdown-container {
+        display: grid;
+        border: 1px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.521);
+        grid-template-columns: auto;
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    #breakdown-container > div {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        margin: 5px;
+        /* height: 100px; */
+    }
+    /*!   Box-1   */
+    #box-1 {
+        text-align: center;
+    }
+
+    #box-1 > p {
+        color: rgb(160, 160, 160);
+    }
+
+    .box1-title {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-top: 0.3rem;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .box1-subTitle {
+        color: white;
+        text-decoration: underline;
+        padding: 5px;
+    }
+
+    .box1-subTitle2 {
+        color: white;
+        text-decoration: underline;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    /*!   Box-2    */
+    #box-2 {
+        text-align: center;
+    }
+
+    #box-2 > p {
+        color: rgb(160, 160, 160);
+    }
+
+    .box2-title {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-top: 0.3rem;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .box2-subTitle {
+        color: white;
+        text-decoration: underline;
+        padding: 5px;
+    }
+
+    .box2-subTitle2 {
+        color: white;
+        text-decoration: underline;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    /*!   Box-3    */
+    #box-3 {
+        text-align: center;
+    }
+
+    #box-3 > p {
+        color: rgb(160, 160, 160);
+    }
+
+    .box3-title {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-top: 0.3rem;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    /*!   Box-4     */
+    #box-4 {
+        text-align: center;
+    }
+
+    #box-4 > p {
+        color: rgb(160, 160, 160);
+    }
+
+    .box4-title {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-top: 0.3rem;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+    .box4-subTitle {
+        color: white;
+        text-decoration: underline;
+        padding: 5px;
+    }
+
+    .box4-subTitle2 {
+        color: white;
+        text-decoration: underline;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    #box-5 {
+        text-align: center;
+    }
+
+    #box-5 > p {
+        color: rgb(160, 160, 160);
+    }
+
+    .box5-title {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        margin-top: 0.3rem;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+}

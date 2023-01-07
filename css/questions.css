@@ -1,0 +1,107 @@
+/*!     Questions / Answers Page Style Css           */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    background: rgba(5, 5, 5, 0.116) url(/img/trimPic-1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*!  Take out afterwards!!!!!    */
+.WelcomePageLink {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: 308px) and (max-width: 425px) {
+    /*!              Nav-Bar                */
+    #nav-container {
+        border: 1px solid white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.521);
+        height: 150px;
+    }
+
+    .navBar-title {
+        color: white;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+
+    .ul-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .li-container {
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 3px;
+        margin: 5px;
+    }
+
+    .li-container:hover {
+        border: 1px solid red;
+    }
+
+    .nav-btns {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .nav-btns:hover {
+        color: red;
+    }
+
+    .nav-btns:active {
+        color: limegreen;
+    }
+
+    /*!                Main Content               */
+    #questions-container {
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.521);
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    #questions {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding-left: 25px;
+    }
+
+    /**     Ordered List        */
+    .name-title {
+        /* text-align: center; */
+        color: white;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    #orderedList-container {
+        padding: 5px;
+    }
+
+    .question {
+        color: white;
+        font-size: 16px;
+    }
+
+    .answer {
+        color: rgb(160, 160, 160);
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}

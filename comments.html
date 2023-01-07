@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/comments.css" />
+
+        <title>Comments</title>
+    </head>
+    <body>
+        <nav id="nav-container">
+            <ul class="li-container">
+                <h2 class="navBar-title">CompanyName</h2>
+                <li><a class="nav-btns" href="home.html">Home</a></li>
+                <li><a class="nav-btns" href="about.html">About</a></li>
+                <li><a class="nav-btns" href="contact.html">Contact</a></li>
+                <br />
+                <!-- <li><a class="nav-btns" href="comments.html">Comments</a></li> -->
+                <li><a class="nav-btns" href="Pictures.html">Pictures</a></li>
+            </ul>
+        </nav>
+
+        <div id="form-container">
+            <form class="form">
+                <h4 class="form-title">Leave a Comment</h4>
+
+                <label for="name" class="name-title" id="name-title">Name</label
+                ><br />
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Joe Smoe"
+                    required
+                /><br />
+
+                <label for="comment" class="comments-title">Comment</label
+                ><br />
+                <textarea
+                    type="text"
+                    id="comment"
+                    name="comment"
+                    rows="10"
+                    cols="33"
+                    required
+                >
+                </textarea>
+                <br />
+
+                <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                />
+                <input type="reset" value="Reset" class="reset-btn" /><br />
+            </form>
+        </div>
+
+        <div id="commentsContainer"></div>
+
+        <script src="/JS/comments.js"></script>
+    </body>
+</html>

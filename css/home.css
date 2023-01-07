@@ -1,0 +1,222 @@
+/*!             Home Page Style Css           */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    background: rgba(5, 5, 5, 0.116) url(/img/woodPlank-1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*!  Take out afterwards!!!!!    */
+.WelcomePageLink {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: 308px) and (max-width: 425px) {
+    /*!              Nav-Bar                */
+    #nav-container {
+        border: 1px solid white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.521);
+        height: 150px;
+    }
+
+    .navBar-title {
+        color: white;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+
+    .li-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline-block;
+        text-align: center;
+        /*? border: 1px solid black; */ /*? Button outline */
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 3px;
+        margin: 5px;
+    }
+
+    li:hover {
+        border: 1px solid white;
+    }
+
+    .nav-btns {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-btns:hover {
+        color: green;
+    }
+
+    .nav-btns:active {
+        color: red;
+    }
+
+    /*!                  Main Content            */
+    /* #main-container {
+        border: 1px solid black;
+    } */
+
+    .main-title {
+        font-family: sans-serif;
+        font-size: 22px;
+        font-weight: bolder;
+        text-align: center;
+        text-shadow: 0.1rem 0.1rem 0.5rem rgba(2, 2, 2, 0.835);
+        color: black;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    /**  Picture Flip Container   */
+    .flip-card {
+        border: 1px solid white;
+        text-shadow: 0.1rem 0.1rem 1rem rgb(238, 235, 235);
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.521);
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: rgb(7, 243, 243);
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: rgba(0, 0, 0, 0.596);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    /*!              Footer               */
+    /*?  Don't forget to take welcome Page link out and extend footer box to bottom of page !!!  */
+    #footer-container {
+        display: grid;
+        grid-template-areas:
+            "quick quick"
+            "Pages type"
+            "Pages type"
+            "Pages type"
+            "Pages type"
+            "Pages type"
+            "Pages type";
+        border: 1px solid white;
+        border-radius: 10px 10px 0 0;
+        padding: 0px;
+        background-color: rgba(0, 0, 0, 0.521);
+        margin-top: 50px; /*! Fix after main content is added */
+        text-align: center;
+    }
+
+    #footer-container > div {
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 10px;
+    }
+
+    /*!  Box-1 in quick links box     */
+    #FooterTitle {
+        grid-area: quick;
+        color: white;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    #footerPages-container {
+        grid-area: Pages;
+        border-radius: 10px 0 0 0;
+        background-color: #0005;
+    }
+
+    .box1-items {
+        display: block;
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .box1-items:hover {
+        border: 1px solid white;
+        border-radius: 10px;
+        color: green;
+    }
+
+    .box1-items:active {
+        color: red;
+    }
+
+    /*!     Box-2 in quick links box       */
+    #footerBox2-container {
+        grid-area: type;
+        border-radius: 0 10px 0 0;
+        background-color: #0005;
+    }
+
+    .box2-items {
+        display: block;
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .box2-items:hover {
+        border: 1px solid white;
+        border-radius: 10px;
+        color: green;
+    }
+
+    .box2-items:active {
+        color: red;
+    }
+}

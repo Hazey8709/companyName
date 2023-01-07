@@ -1,0 +1,178 @@
+/*!             Comments Page Style css        */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    background: rgba(5, 5, 5, 0.116) url(/img/woodPlank-4.webp) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 308px) and (max-width: 425px) {
+    /*!              Nav-Bar                */
+    #nav-container {
+        border: 1px solid white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.479);
+        height: 150px;
+    }
+
+    .navBar-title {
+        color: white;
+        padding-bottom: 20px;
+        font-size: 32px;
+    }
+
+    .li-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 3px;
+        margin: 5px;
+    }
+
+    li:hover {
+        border: 1px solid red;
+    }
+
+    .nav-btns {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    .nav-btns:hover {
+        color: red;
+    }
+
+    .nav-btns:active {
+        color: limegreen;
+    }
+
+    /*!              Comments Form                   */
+    #form-container {
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.521);
+        margin-top: 50px; /*! adjust accordingly  */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .form {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        padding: 10px;
+    }
+
+    /**      Form Name Titles            */
+    .form-title {
+        color: white;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+
+    .name-title {
+        color: rgb(160, 160, 160);
+    }
+
+    .comments-title {
+        color: rgb(160, 160, 160);
+    }
+
+    /**        Form Inputs          */
+    #name {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    #comment {
+        border: 3px double black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        padding: 3px;
+    }
+
+    /**        Form Buttons         */
+    .submit-btn {
+        border: 3px double darkgreen;
+        border-radius: 10px;
+        background-color: lightgreen;
+        font-weight: bold;
+        padding: 3px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .submit-btn:hover {
+        border: 3px solid darkgreen;
+        border-radius: 10px;
+        background-color: white;
+        color: darkgreen;
+        font-weight: bold;
+    }
+
+    .reset-btn {
+        border: 3px double red;
+        border-radius: 10px;
+        background-color: lightcoral;
+        font-weight: bold;
+        padding: 3px;
+        margin-top: 20px;
+    }
+
+    .reset-btn:hover {
+        border: 3px solid red;
+        border-radius: 10px;
+        background-color: white;
+        color: red;
+        font-weight: bold;
+    }
+
+    /*!                      Comments Box                    */
+    .commentsContainer {
+        border: 1px solid blue;
+        border-top: none;
+        border-radius: 0 0 0 0;
+        background-color: rgba(0, 0, 0, 0.521);
+        padding: 15px;
+    }
+
+    .divCont {
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.596);
+        margin-top: 1rem;
+        padding: 15px;
+        /* height: 200px; */
+    }
+
+    .commentsNameTitle {
+        border: 1px solid white;
+        border-bottom: none;
+        border-radius: 10px;
+        color: rgb(160, 160, 160);
+        background-color: black;
+        padding: 5px;
+    }
+
+    .commentsDetails {
+        border: 1px solid white;
+        border-top: none;
+        border-radius: 10px;
+        color: rgb(160, 160, 160);
+        background-color: black;
+        padding: 5px;
+    }
+}
