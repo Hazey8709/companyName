@@ -1,5 +1,11 @@
 //!        Comments  Page   JS
 
+window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName("form")) {
+        form.reset();
+    }
+};
+
 const commentsList = [
     {
         Id: 1,
@@ -47,24 +53,54 @@ function buildList(data) {
     }
 }
 
-let commentForm = document.form;
+let submitBtn = document.getElementById("submit-btn");
 
-const addComment = (e) => {
-    e.preventDefault()
+submitBtn.addEventListener("click", function () {
+    let userName = document.getElementById("name").value;
+    let userComment = document.getElementById("comment").value;
 
-    document.getElementsByClassName('form')
-    let comNameTitle = commentForm.Name.value
-    let comDetails = commentForm.Comment.value
+    const newCom = document.getElementById("commentsContainer");
 
-    let data = {
-        name: comNameTitle,
-        Comment: comDetails,
-    };
+    let commentsCont = document.createElement("div");
+    commentsCont.style.textAlign = "center";
+    commentsCont.className = "divCont";
 
-}
+    let commentsName = document.createElement("p");
+    commentsName.innerText = `${userName}`;
+    commentsCont.appendChild(commentsName);
+    commentsName.className = "commentsNameTitle";
 
-commentForm.addEventListener("submit", addComment());
+    let comments = document.createElement("p");
+    comments.innerText = userComment;
+    commentsCont.appendChild(comments);
+    comments.className = "commentsDetails";
 
+    newCom.appendChild(commentsCont);
 
+    console.log(userName);
+    console.log(userComment);
+});
 
-// document.getElementById( 'submit-btn' )
+// let commentForm = document.form;
+
+// const addComment = (e) => {
+//     e.preventDefault();
+
+//     document.getElementsByClassName("form");
+//     let comNameTitle = commentForm.Name.value;
+//     let comDetails = commentForm.Comment.value;
+
+//     let data = {
+//         name: comNameTitle,
+//         Comment: comDetails,
+//     };
+// };
+
+// document.getElementById("submit-btn").addEventListener("click");
+// {
+//     let userName = document.getElementById("name").value;
+//     let userComment = document.getElementById("comment").value;
+
+//     console.log(userName);
+//     console.log(userComment);
+// }
