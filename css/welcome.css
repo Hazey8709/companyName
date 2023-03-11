@@ -2,7 +2,7 @@
 
 body {
     background-color: darkgray;
-    background: lightblue url("/img/woodPlank-5.jpg") no-repeat fixed center;
+    background: lightblue url("../img/woodPlank-5.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
