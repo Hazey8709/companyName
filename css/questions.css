@@ -5,7 +5,7 @@
 }
 
 Body {
-    background: rgba(5, 5, 5, 0.116) url(/img/trimPic-1.jpg) no-repeat center;
+    background: rgba(5, 5, 5, 0.116) url(../img/trimPic-1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
