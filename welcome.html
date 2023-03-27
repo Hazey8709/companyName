@@ -4,8 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link rel="stylesheet" type="text/css" href="./css/welcome.css" />
+        <script
+            async
+            src="https://api.countapi.xyz/hit/spiltwood/ce90a8cb-af83-4fdc-9f33-a037bee47b51?callback=websiteVisits"
+        ></script>
 
         <title>Welcome Page</title>
     </head>
@@ -16,5 +19,21 @@
         <div id="enterBtn-container">
             <a class="enterBtn" href="home.html">Enter companyName</a>
         </div>
+        <div>
+            <h4>
+                This site has been Visited: <span id="visits"></span> times.
+            </h4>
+        </div>
+        <script src="./JS/welcome.js" defer></script>
     </body>
 </html>
+
+<!--
+https://api.countapi.xyz/create?namespace={spiltwood}&enable_reset=1
+
+https://api.countapi.xyz/create?namespace=spiltwood&enable_reset=1
+
+<script
+    async
+    src="https://api.countapi.xyz/hit/spiltwood/ce90a8cb-af83-4fdc-9f33-a037bee47b51?callback=websiteVisits"
+></script> -->
