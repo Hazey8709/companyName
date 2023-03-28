@@ -2,6 +2,7 @@ function websiteVisits(response) {
     document.querySelector("#visits").textContent = response.value;
 }
 
+
 // //! Create KEY
 // https://api.countapi.xyz/create?namespace={name of website}&enable_reset=1
 
