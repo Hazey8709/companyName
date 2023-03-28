@@ -5,7 +5,8 @@
 }
 
 Body {
-    background: rgba(5, 5, 5, 0.116) url(../img/woodPlank-1.jpg) no-repeat center;
+    background: rgba(5, 5, 5, 0.116) url(../img/woodPlank-1.jpg) no-repeat
+        center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -18,10 +19,11 @@ Body {
     text-decoration: line-through;
 }
 
+/*!   (M)     Mobile Version          */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
-    /*!              Nav-Bar                */
+    /** (M)             Nav-Bar                */
     #nav-container {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         background-color: rgba(0, 0, 0, 0.521);
@@ -36,13 +38,13 @@ Body {
 
     .li-container {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     li {
         display: inline-block;
         text-align: center;
-        /*? border: 1px solid black; */ /*? Button outline */
+        border: 1px inset black; /*? Button outline */
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
         padding: 3px;
@@ -50,7 +52,7 @@ Body {
     }
 
     li:hover {
-        border: 1px solid white;
+        border: 0.1rem solid white;
     }
 
     .nav-btns {
@@ -68,10 +70,10 @@ Body {
         color: red;
     }
 
-    /*!                  Main Content            */
-    /* #main-container {
-        border: 1px solid black;
-    } */
+    /** (M)                  Main Content            */
+    #main-container {
+        /* border: 1px solid black; */
+    }
 
     .main-title {
         font-family: sans-serif;
@@ -84,9 +86,9 @@ Body {
         padding: 15px;
     }
 
-    /**  Picture Flip Container   */
+    /** (M)     Picture Flip Container   */
     .flip-card {
-        border: 1px solid white;
+        border: .2rem inset white;
         text-shadow: 0.1rem 0.1rem 1rem rgb(238, 235, 235);
         border-radius: 10px;
         margin-left: auto;
@@ -101,12 +103,13 @@ Body {
 
     .flip-card-inner {
         position: relative;
+        border-radius: 10px;
         width: 100%;
         height: 100%;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 0px rgb(245, 241, 241);
     }
 
     .flip-card:hover .flip-card-inner {
@@ -134,7 +137,7 @@ Body {
         transform: rotateY(180deg);
     }
 
-    /*!              Footer               */
+    /** (M)              Footer               */
     /*?  Don't forget to take welcome Page link out and extend footer box to bottom of page !!!  */
     #footer-container {
         display: grid;
@@ -146,7 +149,7 @@ Body {
             "Pages type"
             "Pages type"
             "Pages type";
-        border: 1px solid white;
+        border: .2rem outset white;
         border-radius: 10px 10px 0 0;
         padding: 0px;
         background-color: rgba(0, 0, 0, 0.521);
@@ -159,7 +162,7 @@ Body {
         padding: 10px;
     }
 
-    /*!  Box-1 in quick links box     */
+    /** (M)  Box-1 in quick links box     */
     #FooterTitle {
         grid-area: quick;
         color: white;
@@ -194,7 +197,7 @@ Body {
         color: red;
     }
 
-    /*!     Box-2 in quick links box       */
+    /** (M)     Box-2 in quick links box       */
     #footerBox2-container {
         grid-area: type;
         border-radius: 0 10px 0 0;
@@ -218,5 +221,13 @@ Body {
 
     .box2-items:active {
         color: red;
+    }
+
+    .item1 {
+        color: red;
+    }
+
+    .item2 {
+        color: blue;
     }
 }

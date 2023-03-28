@@ -1,11 +1,15 @@
 {
-  "name": "companyname",
-  "version": "1.0.0",
-  "description": "Carpentry website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Hazey",
-  "license": "MIT"
+    "name": "companyname",
+    "version": "1.0.0",
+    "description": "Carpentry website",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Hazey8709/companyName"
+    },
+    "author": "Hazey",
+    "license": "MIT"
 }
