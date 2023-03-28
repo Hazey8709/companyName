@@ -11,8 +11,9 @@ Body {
     background-attachment: fixed;
 }
 
+/*!  (M)           Mobile Version                 */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
-    /*!                      Nav-Bar                            */
+    /** (M)           Nav-Bar               */
     #nav-container {
         border: 1px solid white;
         border-bottom-left-radius: 20px;
@@ -60,7 +61,7 @@ Body {
         color: red;
     }
 
-    /*!                 Main Content                     */
+    /** (M)              Main Content                  */
     #main-title {
         font-family: sans-serif;
         font-size: 22px;
@@ -90,7 +91,7 @@ Body {
         color: red;
     }
 
-    /*!                 Contact -- Form                    */
+    /** (M)              Contact -- Form                */
     #form-container {
         border: 1px solid white;
         background-color: rgba(0, 0, 0, 0.521);
@@ -106,7 +107,7 @@ Body {
         padding: 10px;
     }
 
-    /**        Name titles in form     */
+    /** (M)       Name titles in form     */
     .form-title {
         color: white;
         font-size: 22px;
@@ -154,7 +155,7 @@ Body {
         font-weight: bold;
     }
 
-    /**   Input Boxes     */
+    /** (M)    Input Boxes       */
     #firstName {
         border: 3px double black;
         border-radius: 10px;
@@ -196,7 +197,7 @@ Body {
         margin-bottom: 10px;
     }
 
-    /**     Form Buttons      */
+    /** (M)      Form Buttons      */
     .submit-btn {
         border: 3px double darkgreen;
         border-radius: 10px;
@@ -232,7 +233,7 @@ Body {
         font-weight: bold;
     }
 
-    /*!         Footer Container                       */
+    /** (M)         Footer Container               */
     #footer-container {
         border: 1px solid white;
         border-top-left-radius: 10px;

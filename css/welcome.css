@@ -6,7 +6,7 @@ body {
     background-size: cover;
 }
 
-/** Mobile first */
+/*!  (M)         Mobile                       */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
     .welcomeTitle {
         text-align: center;
@@ -14,7 +14,7 @@ body {
         margin-top: 100px;
         margin-bottom: 100px;
         padding: 5px;
-        border: 2px solid white;
+        border: 0.2rem outset white;
         border-radius: 10px;
         color: white;
         background-color: rgba(0, 0, 0, 0.719);
@@ -31,7 +31,7 @@ body {
         font-weight: bold;
         text-decoration: none;
         border-radius: 10px;
-        padding: 5px;
+        padding: 1rem;
     }
 
     .enterBtn:hover {
@@ -43,8 +43,21 @@ body {
     .enterBtn:active {
         color: green;
     }
+
+    /**    Counter       */
+    .visitCounter p {
+        font-size: 12px;
+        border-radius: .2rem;
+        color: black;
+        background-color: rgba(249, 247, 247, 0.333);
+        width: 11rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: .1rem;
+    }
 }
 
+/*!  (L)          Laptop Screen                 */
 @media only screen and (min-width: 426px) and (max-width: 1440px) {
     #welcomeTitle-container {
         text-align: center;
