@@ -11,7 +11,7 @@ Body {
     background-attachment: fixed;
 }
 
-/*!  (M)           Mobile Version                 */
+/*!  (M)     ---------- Mobile Version  ----------                   */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
     /** (M)           Nav-Bar               */
     #nav-container {
@@ -26,6 +26,7 @@ Body {
         color: white;
         padding-bottom: 20px;
         font-size: 32px;
+        cursor: pointer;
     }
 
     .li-container {
@@ -105,6 +106,7 @@ Body {
     .form {
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
+        box-shadow: 0px 0px 10px 1px white;
         padding: 10px;
     }
 
@@ -114,21 +116,6 @@ Body {
         font-size: 22px;
         text-decoration: underline;
         margin-bottom: 20px;
-    }
-
-    .firstName-title {
-        color: rgb(160, 160, 160);
-        font-weight: bold;
-    }
-
-    .lastName-title {
-        color: rgb(160, 160, 160);
-        font-weight: bold;
-    }
-
-    .address-title {
-        color: rgb(160, 160, 160);
-        font-weight: bold;
     }
 
     .details-title {
@@ -157,33 +144,17 @@ Body {
     }
 
     /** (M)    Input Boxes       */
-    #firstName {
-        border: 3px double black;
-        border-radius: 10px;
-        background-color: antiquewhite;
-        padding: 3px;
-        margin-bottom: 10px;
-    }
 
-    #lastName {
-        border: 3px double black;
-        border-radius: 10px;
+    #form-container input {
+        border: 2px inset white;
+        border-radius: 5px;
         background-color: antiquewhite;
-        padding: 3px;
-        margin-bottom: 10px;
-    }
-
-    #address {
-        border: 3px double black;
-        border-radius: 10px;
-        background-color: antiquewhite;
-        border-radius: 10px;
         padding: 3px;
         margin-bottom: 10px;
     }
 
     #details {
-        border: 3px double black;
+        border: 2px inset white;
         border-radius: 10px;
         background-color: antiquewhite;
         padding: 3px;
@@ -200,17 +171,18 @@ Body {
 
     /** (M)      Form Buttons      */
     .submit-btn {
-        border: 3px double darkgreen;
+        border: 3px inset white;
         border-radius: 10px;
         background-color: lightgreen;
         font-weight: bold;
         padding: 3px;
         margin-top: 20px;
         margin-right: 40px;
+        cursor: pointer;
     }
 
     .submit-btn:hover {
-        border: 3px solid darkgreen;
+        border: 3px inset limegreen;
         border-radius: 10px;
         background-color: white;
         color: darkgreen;
@@ -218,16 +190,17 @@ Body {
     }
 
     .reset-btn {
-        border: 3px double red;
+        border: 3px inset white;
         border-radius: 10px;
         background-color: lightcoral;
         font-weight: bold;
         padding: 3px;
         margin-top: 20px;
+        cursor: pointer;
     }
 
     .reset-btn:hover {
-        border: 3px solid red;
+        border: 3px inset red;
         border-radius: 10px;
         background-color: white;
         color: red;
@@ -250,6 +223,7 @@ Body {
         text-align: center;
         font-size: 22px;
         margin-bottom: 10px;
+        cursor: pointer;
     }
 
     #links-area {
@@ -257,6 +231,7 @@ Body {
         background-color: rgba(0, 0, 0, 0.596);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        box-shadow: 0px 0px 10px 1px white;
         padding: 5px;
         height: 153px;
         text-align: center;
