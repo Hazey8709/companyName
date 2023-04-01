@@ -5,10 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="./css/welcome.css" />
-        <!-- <script
-            async
-            src="https://api.countapi.xyz/hit/spiltwood/ce90a8cb-af83-4fdc-9f33-a037bee47b51?callback=websiteVisits"
-        ></script> -->
 
         <title>Welcome Page</title>
     </head>
@@ -17,10 +13,12 @@
             <h1 class="welcomeTitle">Welcome to CompanyName</h1>
         </div>
         <div id="enterBtn-container">
-            <a class="enterBtn" href="home.html">Enter companyName</a>
+            <a id="increment-visit-count" class="enterBtn" href="./html/home.html"
+                >Enter companyName</a
+            >
         </div>
         <div class="visitCounter">
-            <p>This site has been Visited: <span id="visits"></span> times.</p>
+            <p>Visits: #<span id="visits"></span></p>
         </div>
         <script src="./JS/welcome.js" defer></script>
     </body>

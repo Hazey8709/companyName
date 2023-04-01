@@ -11,10 +11,11 @@ Body {
     background-attachment: fixed;
 }
 
+/*!  (M)       -------- Mobile  Version  ------------           */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
-    /*!              Nav-Bar                */
+    /**              Nav-Bar                */
     #nav-container {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         background-color: rgba(0, 0, 0, 0.479);
@@ -25,15 +26,17 @@ Body {
         color: white;
         padding-bottom: 20px;
         font-size: 32px;
+        cursor: pointer;
     }
 
     .li-container {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     li {
         display: inline-block;
+        border: 0.1rem inset black;
         text-align: center;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
@@ -42,26 +45,27 @@ Body {
     }
 
     li:hover {
-        border: 1px solid red;
+        border: 1px solid white;
     }
 
     .nav-btns {
         color: white;
         padding: 10px;
         text-decoration: none;
+        font-weight: bold;
     }
 
     .nav-btns:hover {
-        color: red;
+        color: green;
     }
 
     .nav-btns:active {
-        color: limegreen;
+        color: red;
     }
 
-    /*!              Comments Form                   */
+    /**              Comments Form                   */
     #form-container {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         border-radius: 0.5rem;
         background-color: rgba(0, 0, 0, 0.521);
         margin-top: 50px; /*! adjust accordingly  */
@@ -72,6 +76,7 @@ Body {
     .form {
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
+        box-shadow: 0px 0px 10px 1px white;
         padding: 10px;
     }
 
@@ -82,43 +87,42 @@ Body {
         margin-bottom: 10px;
     }
 
-    .name-title {
-        color: rgb(160, 160, 160);
-    }
-
     .comments-title {
         color: rgb(160, 160, 160);
     }
 
     /**        Form Inputs          */
     #name {
-        border: 3px double black;
-        border-radius: 10px;
+        border: 0.2rem inset white;
+        border-radius: 0.3rem;
         background-color: antiquewhite;
         padding: 3px;
         margin-bottom: 10px;
     }
 
     #comment {
-        border: 3px double black;
-        border-radius: 10px;
+        border: 0.2rem inset white;
+
+        border-radius: 0.3rem;
         background-color: antiquewhite;
+        margin: 0 auto;
         padding: 3px;
     }
 
     /**        Form Buttons         */
     .submit-btn {
-        border: 3px double darkgreen;
+        border: 3px inset white;
         border-radius: 10px;
         background-color: lightgreen;
         font-weight: bold;
         padding: 3px;
         margin-top: 20px;
         margin-right: 40px;
+        cursor: pointer;
     }
 
     .submit-btn:hover {
-        border: 3px solid darkgreen;
+        border: 3px inset limegreen;
         border-radius: 10px;
         background-color: white;
         color: darkgreen;
@@ -126,54 +130,40 @@ Body {
     }
 
     .reset-btn {
-        border: 3px double red;
+        border: 3px inset white;
         border-radius: 10px;
         background-color: lightcoral;
         font-weight: bold;
         padding: 3px;
         margin-top: 20px;
+        cursor: pointer;
     }
 
     .reset-btn:hover {
-        border: 3px solid red;
+        border: 3px inset red;
         border-radius: 10px;
         background-color: white;
         color: red;
         font-weight: bold;
     }
 
-    /*!                      Comments Box                    */
-    .commentsContainer {
-        border: 1px solid blue;
-        border-top: none;
-        border-radius: 0 0 0 0;
+    /**                      Comments Box                    */
+    #commentsContainer {
+        border: 0.2rem inset white;
+        /* border-top: none; */
+        border-radius: 0.5rem;
         background-color: rgba(0, 0, 0, 0.521);
+        color: white;
+        margin-top: 2rem;
         padding: 15px;
     }
 
-    .divCont {
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.596);
-        margin-top: 1rem;
-        padding: 15px;
-        /* height: 200px; */
-    }
-
-    .commentsNameTitle {
-        border: 1px solid white;
-        border-bottom: none;
-        border-radius: 10px;
-        color: rgb(160, 160, 160);
-        background-color: black;
-        padding: 5px;
-    }
-
-    .commentsDetails {
-        border: 1px solid white;
-        border-top: none;
-        border-radius: 10px;
-        color: rgb(160, 160, 160);
-        background-color: black;
-        padding: 5px;
+    .singleMessage {
+        border: 0.2rem outset grey;
+        border-radius: 0.2rem;
+        background-color: #0005;
+        box-shadow: 2px 0px 5px 1px white;
+        padding: 0.2rem;
+        margin: 1rem;
     }
 }

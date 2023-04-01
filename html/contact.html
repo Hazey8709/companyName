@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+        <link rel="stylesheet" type="text/css" href="../css/contact.css" />
 
         <title>Contact Page</title>
     </head>
@@ -43,32 +43,31 @@
                 method="POST"
             >
                 <h4 class="form-title">Contact Form</h4>
-                <label for="firstName" class="firstName-title">First Name</label
-                ><br />
+                <!-- <br /> -->
                 <input
                     type="text"
-                    id="firstName"
-                    name="FirstName"
-                    placeholder="Joe"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Name: Joe Smith"
                     required
                 /><br />
 
-                <label for="lastName" class="lastName-title">Last Name</label
-                ><br />
-                <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    placeholder="Smith"
-                    required
-                /><br />
-
-                <label for="address" class="address-title">Address</label><br />
+                <!-- <label for="lastName" class="lastName-title">Last Name</label
+                ><br /> -->
                 <input
                     type="text"
                     id="address"
                     name="address"
-                    placeholder="Address/state/city/zip"
+                    placeholder="Address: 128 well Rd"
+                    required
+                /><br />
+
+                <!-- <label for="address" class="address-title">Address</label><br /> -->
+                <input
+                    type="text"
+                    id="cityState"
+                    name="cityState "
+                    placeholder="City/State/zip: "
                     required
                 /><br />
 
@@ -93,6 +92,7 @@
                     <option value="Flooring"></option>
                     <option value="Electrical"></option>
                     <option value="Plumbing"></option>
+                    <option value="Other"></option>
                 </datalist>
                 <br />
 
@@ -106,8 +106,12 @@
                 <label for="no" class="no-label">NO</label>
                 <br />
 
-                <input type="submit" value="Submit" class="submit-btn" />
-                <input type="reset" value="Reset" class="reset-btn" />
+                <button type="submit" value="Submit" class="submit-btn">
+                    Submit
+                </button>
+                <button type="reset" value="Reset" class="reset-btn">
+                    Reset
+                </button>
             </form>
         </div>
 

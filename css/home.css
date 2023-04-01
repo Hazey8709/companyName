@@ -155,6 +155,7 @@ Body {
         background-color: rgba(0, 0, 0, 0.521);
         margin-top: 50px; /*! Fix after main content is added */
         text-align: center;
+
     }
 
     #footer-container > div {
@@ -176,6 +177,7 @@ Body {
         grid-area: Pages;
         border-radius: 10px 0 0 0;
         background-color: #0005;
+        
     }
 
     .box1-items {
