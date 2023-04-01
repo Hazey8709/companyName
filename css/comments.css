@@ -11,8 +11,9 @@ Body {
     background-attachment: fixed;
 }
 
+/*!  (M)       -------- Mobile  Version  ------------           */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
-    /*!              Nav-Bar                */
+    /**              Nav-Bar                */
     #nav-container {
         border: 1px solid white;
         border-bottom-left-radius: 20px;
@@ -59,7 +60,7 @@ Body {
         color: limegreen;
     }
 
-    /*!              Comments Form                   */
+    /**              Comments Form                   */
     #form-container {
         border: 1px solid white;
         border-radius: 0.5rem;
@@ -142,38 +143,22 @@ Body {
         font-weight: bold;
     }
 
-    /*!                      Comments Box                    */
-    .commentsContainer {
-        border: 1px solid blue;
-        border-top: none;
-        border-radius: 0 0 0 0;
+    /**                      Comments Box                    */
+    #commentsContainer {
+        border: 0.2rem inset white;
+        /* border-top: none; */
+        border-radius: 0.5rem;
         background-color: rgba(0, 0, 0, 0.521);
+        color: white;
+        margin-top: 2rem;
         padding: 15px;
     }
 
-    .divCont {
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.596);
-        margin-top: 1rem;
-        padding: 15px;
-        /* height: 200px; */
-    }
-
-    .commentsNameTitle {
-        border: 1px solid white;
-        border-bottom: none;
-        border-radius: 10px;
-        color: rgb(160, 160, 160);
-        background-color: black;
-        padding: 5px;
-    }
-
-    .commentsDetails {
-        border: 1px solid white;
-        border-top: none;
-        border-radius: 10px;
-        color: rgb(160, 160, 160);
-        background-color: black;
-        padding: 5px;
+    .singleMessage {
+        border: 0.1rem solid grey;
+        border-radius: 0.2rem;
+        background-color: #0005;
+        padding: 0.2rem;
+        margin: 1rem;
     }
 }

@@ -56,13 +56,14 @@ form.addEventListener("submit", (e) => {
 
 function displayComments() {
     //* Clear the comments container
-    commentsContainer.innerHTML = "";
+    loggedComments.innerHTML = "";
 
     //* Loop through the comments and create a new div for each one
     comments.forEach((comment) => {
         const div = document.createElement("div");
         div.textContent = `${comment.name}: ${comment.comment}`;
-        commentsContainer.appendChild(div);
+        div.classList = "singleMessage";
+        loggedComments.appendChild(div);
     });
 }
 
