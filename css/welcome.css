@@ -18,6 +18,7 @@ body {
         border-radius: 10px;
         color: white;
         background-color: rgba(0, 0, 0, 0.719);
+        cursor: pointer;
     }
 
     #enterBtn-container {
@@ -26,7 +27,7 @@ body {
 
     .enterBtn {
         background-color: rgba(0, 0, 0, 0.4);
-        color: black;
+        color: rgb(1, 219, 1);
         font-size: 22px;
         font-weight: bold;
         text-decoration: none;
@@ -44,16 +45,19 @@ body {
         color: green;
     }
 
-    /**    Counter       */
+    /** (M)       Counter       */
     .visitCounter p {
         font-size: 12px;
-        border-radius: .2rem;
-        color: black;
+        text-align: center;
+        text-decoration: underline;
+        border-radius: 0.2rem;
+        color: rgb(251, 1, 1);
         background-color: rgba(249, 247, 247, 0.333);
-        width: 11rem;
+        width: 4rem;
         margin: 0 auto;
-        margin-top: 2rem;
-        padding: .1rem;
+        margin-top: 13rem;
+        padding: 0.1rem;
+        cursor: pointer;
     }
 }
 
