@@ -1,5 +1,4 @@
-//!        Comments  Page   JS
-
+//!      ----- Comments List -------
 const commentsList = [
     {
         id: 1,
@@ -35,7 +34,7 @@ displayComments();
 
 //* Listen for form submission
 form.addEventListener("submit", (e) => {
-    e.preventDefault(); // prevent the form from submitting normally
+    e.preventDefault(); //* prevent the form from submitting normally
 
     //* Get the values of the name and comment fields
     const name = form.elements.name.value;
@@ -67,36 +66,26 @@ function displayComments() {
     });
 }
 
-//! Form Spree Reset Form
-// window.onbeforeunload = () => {
-//     for (const form of document.getElementsByTagName("form")) {
-//         form.reset();
-//     }
-// };
+//!      ----------    Comments Counter     -------------
+//* Get the comments count from local storage
+let comCount = localStorage.getItem("count");
 
-//! HTML FORM Tag for above
-// action="https://formspree.io/f/xayzypaj"
-//                 method="POST"
+//* If the comCount doesn't exist in local storage, set it to #4
+if (!comCount) {
+    comCount = 4;
+}
 
-// const commentsList = [
-//     {
-//         Id: 1,
-//         Name: "Ben",
-//         Comment: "CompanyName is outstanding.",
-//     },
-//     {
-//         Id: 2,
-//         Name: "Jay",
-//         Comment: "CompanyName was fast clean & cheaper.",
-//     },
-//     {
-//         Id: 3,
-//         Name: "Glen",
-//         Comment: "CompanyName was great!",
-//     },
-//     {
-//         Id: 4,
-//         Name: "Blue Davis",
-//         Comment: "I was in a jam, CompanyName helped me through it.",
-//     },
-// ];
+//* Update comCount in the HTML
+document.getElementById("commentsCount").textContent = comCount;
+
+//* Add an event listener to the button to increment the count when clicked
+document.getElementById("submit-btn").addEventListener("click", function () {
+    //* Increment the comCount by 1
+    comCount++;
+
+    //* Save the new count to local storage
+    localStorage.setItem("count", comCount);
+
+    //* Update the comCount in the HTML
+    document.getElementById("commentsCount").textContent = comCount;
+});
