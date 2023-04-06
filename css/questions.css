@@ -18,10 +18,11 @@ Body {
     text-decoration: line-through;
 }
 
+/*!   (M)     ----------- Mobile Version --------------     */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
-    /*!              Nav-Bar                */
+    /**              Nav-Bar                */
     #nav-container {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         background-color: rgba(0, 0, 0, 0.521);
@@ -36,11 +37,12 @@ Body {
 
     .ul-container {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .li-container {
         display: inline-block;
+        border: 0.1rem inset black;
         text-align: center;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
@@ -49,7 +51,7 @@ Body {
     }
 
     .li-container:hover {
-        border: 1px solid red;
+        border: 0.1rem solid white;
     }
 
     .nav-btns {
@@ -59,16 +61,16 @@ Body {
     }
 
     .nav-btns:hover {
-        color: red;
+        color: green;
     }
 
     .nav-btns:active {
-        color: limegreen;
+        color: red;
     }
 
-    /*!                Main Content               */
+    /**                Main Content               */
     #questions-container {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.521);
         margin-top: 50px;
@@ -78,6 +80,7 @@ Body {
     #questions {
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
+        box-shadow: 0px 0px 10px 0px rgb(245, 241, 241);
         padding-left: 25px;
     }
 
@@ -86,7 +89,7 @@ Body {
         /* text-align: center; */
         color: white;
         text-decoration: underline;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 22px;
     }
 
@@ -95,6 +98,7 @@ Body {
     }
 
     .question {
+        margin-top: 1rem;
         color: white;
         font-size: 16px;
     }
