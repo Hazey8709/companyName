@@ -88,7 +88,7 @@ Body {
 
     /** (M)     Picture Flip Container   */
     .flip-card {
-        border: .2rem inset white;
+        border: 0.2rem inset white;
         text-shadow: 0.1rem 0.1rem 1rem rgb(238, 235, 235);
         border-radius: 10px;
         margin-left: auto;
@@ -96,6 +96,7 @@ Body {
         margin-bottom: 20px;
         padding: 15px;
         background-color: rgba(0, 0, 0, 0.521);
+        box-shadow: 0px 0px 10px 0px rgb(8, 8, 8);
         width: 200px;
         height: 200px;
         perspective: 1000px;
@@ -149,13 +150,12 @@ Body {
             "Pages type"
             "Pages type"
             "Pages type";
-        border: .2rem outset white;
+        border: 0.2rem outset white;
         border-radius: 10px 10px 0 0;
         padding: 0px;
         background-color: rgba(0, 0, 0, 0.521);
         margin-top: 50px; /*! Fix after main content is added */
         text-align: center;
-
     }
 
     #footer-container > div {
@@ -177,7 +177,6 @@ Body {
         grid-area: Pages;
         border-radius: 10px 0 0 0;
         background-color: #0005;
-        
     }
 
     .box1-items {

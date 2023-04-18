@@ -10,11 +10,11 @@ Body {
     background-size: cover;
     background-attachment: fixed;
 }
-
+/*! (M)          ---------- Mobile Version ---------       */
 @media only screen and (min-width: 308px) and (max-width: 425px) {
-    /*!              Nav-Bar                */
+    /**              Nav-Bar                */
     #nav-container {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         background-color: rgba(0, 0, 0, 0.479);
@@ -25,15 +25,17 @@ Body {
         color: white;
         padding-bottom: 20px;
         font-size: 32px;
+        cursor: pointer;
     }
 
     .li-container {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     li {
         display: inline-block;
+        border: 0.1rem inset black;
         text-align: center;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.596);
@@ -42,7 +44,7 @@ Body {
     }
 
     li:hover {
-        border: 1px solid red;
+        border: 0.1rem solid white;
     }
 
     .nav-btns {
@@ -53,14 +55,14 @@ Body {
     }
 
     .nav-btns:hover {
-        color: red;
+        color: green;
     }
 
     .nav-btns:active {
-        color: limegreen;
+        color: red;
     }
 
-    /*!                  Main Content            */
+    /** (M)                  Main Content            */
 
     .main-title {
         font-family: sans-serif;
@@ -77,14 +79,15 @@ Body {
     .picSectName {
         text-align: center;
         margin-top: 2rem;
+        margin-bottom: 0.5rem;
         text-decoration: underline;
         text-shadow: 0.3rem 0.2rem 0.3rem rgb(2, 2, 2);
         color: aliceblue;
     }
 
-    /**  Picture Flip Container   */
+    /** (M)     Picture Flip Container     */
     .flip-card {
-        border: 1px solid white;
+        border: 0.2rem outset white;
         text-shadow: 0.1rem 0.1rem 1rem rgb(238, 235, 235);
         border-radius: 10px;
         margin-left: auto;
@@ -92,6 +95,7 @@ Body {
         margin-bottom: 20px;
         padding: 15px;
         background-color: rgba(0, 0, 0, 0.521);
+        box-shadow: 0px 0px 10px 0px rgb(8, 8, 8);
         width: 200px;
         height: 200px;
         perspective: 1000px;
@@ -99,21 +103,23 @@ Body {
 
     .flip-card-inner {
         position: relative;
+        border-radius: 0.5rem;
         width: 100%;
         height: 100%;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px 0px rgb(245, 241, 241);
     }
 
     .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
+        /* border-radius: 0.5rem; */
     }
 
     .flip-card-front,
     .flip-card-back {
-        border-radius: 10px;
+        border-radius: 0.5rem;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -122,11 +128,13 @@ Body {
     }
 
     .flip-card-front {
+        border-radius: 0.5rem;
         background-color: rgb(7, 243, 243);
         color: black;
     }
 
     .flip-card-back {
+        /* border-radius: 0.5rem; */
         background-color: rgba(0, 0, 0, 0.596);
         color: white;
         transform: rotateY(180deg);

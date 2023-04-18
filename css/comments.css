@@ -149,7 +149,7 @@ Body {
 
     /**                      Comments Box                    */
     #commentsContainer {
-        border: 0.2rem inset white;
+        border: 0.2rem outset white;
         /* border-top: none; */
         border-radius: 0.5rem;
         background-color: rgba(0, 0, 0, 0.521);
@@ -158,8 +158,19 @@ Body {
         padding: 15px;
     }
 
+    #commentsContainer p {
+        border: 0.1rem solid black;
+        border-radius: 0.2rem;
+        background-color: rgba(248, 246, 246, 0.37);
+        color: black;
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 10rem;
+        text-align: center;
+    }
+
     .singleMessage {
-        border: 0.2rem outset grey;
+        border: 0.2rem inset grey;
         border-radius: 0.2rem;
         background-color: #0005;
         box-shadow: 2px 0px 5px 1px white;
