@@ -7,7 +7,7 @@ body {
 }
 
 /*!  (M)         Mobile                       */
-@media only screen and (min-width: 308px) and (max-width: 425px) {
+@media only screen and (min-width: 306px) and (max-width: 450px) {
     .welcomeTitle {
         text-align: center;
         font-size: 42px;
@@ -62,7 +62,7 @@ body {
 }
 
 /*!  (L)          Laptop Screen                 */
-@media only screen and (min-width: 426px) and (max-width: 1440px) {
+@media only screen and (min-width: 450px) and (max-width: 1750px) {
     #welcomeTitle-container {
         text-align: center;
         width: 600px;
@@ -80,13 +80,14 @@ body {
         background-color: rgba(0, 0, 0, 0.719);
     }
 
+    /** Enter Button  */
     #enterBtn-container {
         text-align: center;
     }
 
     .enterBtn {
-        background-color: rgba(0, 0, 0, 0.4);
-        color: black;
+        background-color: rgba(0, 0, 0, 0.393);
+        color: limegreen;
         font-size: 32px;
         font-weight: bold;
         text-decoration: none;
@@ -102,5 +103,20 @@ body {
 
     .enterBtn:active {
         color: green;
+    }
+
+    /** (M)       Counter       */
+    .visitCounter p {
+        font-size: 18px;
+        text-align: center;
+        text-decoration: underline;
+        border-radius: 0.2rem;
+        color: rgb(251, 1, 1);
+        background-color: rgba(249, 247, 247, 0.333);
+        width: 8rem;
+        margin: 0 auto;
+        margin-top: 25rem;
+        padding: 0.1rem;
+        cursor: pointer;
     }
 }
