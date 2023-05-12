@@ -322,11 +322,12 @@ Body {
             "content2 content2 content2 content2";
         border: 2px solid blue;
     }
-    #cards-Cont > div {
-        /* display: inline; */
-        /* border: 2px solid red; */
-        /* gap: 5rem; */
-    }
+
+    /* #cards-Cont > div {
+        display: inline;
+        border: 2px solid red;
+        gap: 5rem;
+    } */
 
     .main-title {
         grid-area: title;
