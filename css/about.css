@@ -73,6 +73,11 @@ Body {
         padding: 15px;
     }
 
+    #main-Paragraph > span {
+        font-size: 15px;
+        color: white;
+    }
+
     .email-link {
         border: 1px solid white;
         border-radius: 10px;

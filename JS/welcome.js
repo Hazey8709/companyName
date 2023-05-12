@@ -1,13 +1,13 @@
 //* Get the current visitor count from local storage
 let count = localStorage.getItem("visitorCount");
 
-//* If the count doesn't exist in local storage, set it to 0
+//* If the count doesn't exist in local storage, set it to 3583
 if (!count) {
-    count = 82;
+    count = 3583;
 }
 
 //* Update the visitor count in the HTML
-document.getElementById("visits").textContent = count;
+document.getElementById("visits").innerText = count;
 
 //* Add an event listener to the button to increment the count when clicked
 document
@@ -20,10 +20,5 @@ document
         localStorage.setItem("visitorCount", count);
 
         //* Update the visitor count in the HTML
-        document.getElementById("visitor-count").textContent = count;
+        document.getElementById("visitor-count").innerText = count;
     });
-
-
-
-
-    
